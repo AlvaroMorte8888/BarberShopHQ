@@ -7,7 +7,7 @@ require 'sinatra/activerecord'
 # создаем подключение к базе данных
 set :database, "sqlite3:barbershop.db" # подключаем sqlite3
 
-class Client < ActiveRecord::Base
+class Client < ActiveRecord::Base # создаем сущность Client в который входит ActiveRecord
 end
 
 get '/' do
